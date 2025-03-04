@@ -128,7 +128,7 @@ void setup() {
               case CMD_BACKWARDS:
                 //checks distance once but the goal is to check again and again
                 Serial.println("Move Backwards");
-                if (checkDistance() >= 20) {
+                if (checkDistance() <= 20.0) {
                   stop();
                 } else {
                   backwards();
